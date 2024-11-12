@@ -7,7 +7,7 @@ jobs:
   create-artifact:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "vivek" >> artifact.txt
+      - run: echo "\; echo 'attacker controlled code'\; \#" > artifact.txt
       - uses: actions/upload-artifact@v3
         with:
           name: artifact
