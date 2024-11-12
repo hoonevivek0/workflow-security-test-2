@@ -7,7 +7,7 @@ jobs:
   create-artifact:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "; echo 'attacker controlled code'; #" > artifact.txt
+      - run: echo "vwake" > artifact.txt
       - uses: actions/upload-artifact@v2
         with:
           name: artifact
