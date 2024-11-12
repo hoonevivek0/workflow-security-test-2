@@ -7,7 +7,7 @@ jobs:
   create-artifact:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "vivek" >> artifact.txt
+      - run: echo "vivekkk" >> artifact.txt
       - uses: actions/upload-artifact@v3
         with:
           name: artifact
